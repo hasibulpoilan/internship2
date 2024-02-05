@@ -336,8 +336,9 @@ border: 1px;
 
 }
 .p-nav1{
-    width: 1644px;
+    width: 1440px;
     height: 72px;
+    /* left: 0; */
    
    
 }
@@ -358,14 +359,20 @@ border-radius: 4px, 4px, 0px, 0px;
 
 }
 .hastag{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
     width: 692px;
     margin-left: 200px;
     top: 656px;
+    gap: 60px;
+    
 }
 .conti{
     display:flex;
     justify-content: space-around;
     width: 100%;
+    
 }
 /* .n-e{
     display: flex;
@@ -508,10 +515,22 @@ footer {
     width: 1440px;
 height: 440px;
 top: 72px;
-
+filter:brightness(50%)
+/* position: relative; */
 
 }
-
+.img1{
+    position: absolute;
+  top: 358px;
+  left: 0;
+  left: 200px;
+}
+.img2{
+    position: absolute;
+  top: 409px;
+  left: 0;
+  left: 200px;
+}
 
 
    */
@@ -587,25 +606,47 @@ border-radius: 4px;
 border: 1px;
 
 }
+.r-l{
+    display: flex;
+    
+}
+.r-a{
+    display: flex;
+    
+}
+.r-m{
+    display: flex;
+    
+}
+.r-p{
+    display: flex;
+    
+}
 .r-l-f{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 100px;
 }
 .r-a-f{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 100px;
+    /* gap: 100px; */
 }
 .r-m-f{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 100px;
+    /* gap: 100px; */
 }
 .r-p-f{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 100px;
 }
 .logo-fol{
     width: 240px;
@@ -655,12 +696,118 @@ left: 266px;
     
 }
 
+/* Apply basic styling to make the layout responsive */
+
+/* Viewport meta tag */
+
+
+/* Use flexbox for layout */
+.conti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adjust image size for responsiveness */
+.img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media query for smaller screens */
+/* Apply basic styling to make the layout responsive */
+
+/* Viewport meta tag */
+
+/* Use flexbox for layout */
+.conti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adjust image size for responsiveness */
+.img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 576px) {
+    .nav1 {
+        display: none; /* Hide the navigation */
+    }
+    .join-group-button {
+        display: inline-block; /* Show the "Join Group" button */
+    }
+    /* Adjust styles for smaller screens */
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .join-group-button {
+        display: none; /* Hide the "Join Group" button */
+    }
+    .nav1 {
+        display: flex; /* Show the navigation */
+    }
+    /* Adjust styles for larger screens */
+}
+
+/* Add more media queries as needed to refine responsiveness */
 
 
 
 
 
 
+/* Use flexbox for layout */
+/* Use flexbox for layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   
+   /* Adjust image size for responsiveness */
+   .img {
+    width: 100%;
+    height: auto;
+   }
+   
+   /* Media query for smaller screens */
+   @media screen and (max-width: 767px) {
+    /* Make the layout stacked on smaller screens */
+    .container {
+    flex-direction: column;
+    }
+   
+    .col-md-8, .col-md-4 {
+    width: 100%;
+    }
+   }
+
+
+
+
+   @media screen and (max-width: 576px) {
+    .nav1 {
+        display: none; /* Hide the navigation */
+    }
+    .join-group-button {
+        display: inline-block; /* Show the "Join Group" button */
+    }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 577px) {
+    .join-group-button {
+        display: none; /* Hide the "Join Group" button */
+    }
+    .nav1 {
+        display: flex; /* Show the navigation */
+    }
+}
 
 
 
